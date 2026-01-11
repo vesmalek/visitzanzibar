@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+#hero {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/beach-front.jpg");
+    background-size: cover;
+    background-position: right center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#activities {
+    background-color: #FFF0F3;
+    color: #590D22;
+    padding: 75px 0 75px;
+}
+
+#guide {
+    background-color: #fff;
+    padding: 75px 0;
+}
+
+#card {
+    background-color: #FF4D6D;
+    color: #FFF0F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 25px;
+    border-bottom: 8px solid #590D22;
+}
+
+#hero-heading {
+    background-color: #590D22;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 60px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+#hero-subheading {
+    background-color: #A4133C;
+    padding: 5px 10px;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out 0.4s forwards;
+    /* 0.4s delay */
+    opacity: 0;
+    /* Keeps it hidden until the animation starts */
+}
+
+h1,
+h2,
+h3,
+h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.activity-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#activity-heading {
+    font-size: 32px;
+}
+
+#activities-tiles {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.activity-tile {
+    width: 350px;
+}
+
+#tour-guide-profile-pic {
+    width: 300px;
+    border-radius: 25px;
+}
+
+#tour-guide-description {
+    width: 300px;
+    padding-left: 30px;
+}
+
+
+/* Animation Effects */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Starts 30px lower */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Ends at its natural position */
+    }
+}
